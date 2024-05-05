@@ -109,7 +109,6 @@ main{
     height: 35vh;
     background-image: url("../assets/imgs/img-5.jpg");
     background-position: center;
-
 }
 
 .about-us{
@@ -118,6 +117,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    margin: 20px 100px;
     background-color: hsl(0, 0%, 93%);
     font-family: "Raleway", sans-serif;
 }
@@ -167,6 +167,8 @@ textarea{
     margin: 4px 0px;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.350);
+    font-family: "Raleway", sans-serif;
+    font-size: 11pt;
 }
 
 button{
@@ -182,6 +184,3 @@ button:hover{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
 }
 
-.contactText{
-    max-width: 50vw;
-}

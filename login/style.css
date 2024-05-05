@@ -10,7 +10,6 @@ body {
     border: none;
 }
 
-  
 .dropdown {
     position: relative;
     display: inline-block;
@@ -34,7 +33,10 @@ body {
     color:  #4e740d;
 }
   
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #4e740d;
+}
   
 .dropdown:hover .dropdown-content {display: block;}
 
