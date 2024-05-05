@@ -180,7 +180,7 @@ main{
     transform: translateX(5px);
 }
 
-.frame > span{
+.frame > img{
     left: 65px;
     margin-top: 20px;
     position: relative;
@@ -192,4 +192,11 @@ main{
     text-align: center;
     font-size: 13pt;
     text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
 }
