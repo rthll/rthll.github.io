@@ -15,9 +15,17 @@
             <p class="subtitle">Junte-se a nós para fazer o bem.</p>
             <input type="text" name="name" id="name" placeholder="Nome do usuário" minlength="3" maxlength="50" required autocomplete="additional-name">
             <input type="email" name="email" id="email" placeholder="Email do usuário" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" required autocomplete="email">
-            <button type="submit">Cadastrar novo usuário</button>
+            <button class="btnRegister" type="button" onclick="saveAdminData()">Cadastrar novo usuário</button>
+            <button class="btnClean" onclick="clearForm()">Limpar</button>
             <p>Já possui uma conta? <a href="../login/login.html">Faça seu login</a></p>
         </form>
+        <div class="bnScript">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            <button type="button" onclick="searchAdminData()">Pesquisar</button>
+            <button type="button" onclick="deleteAllAdmin()">Excluir Todos</button>
+        </div>
+        <ul id="adminDataList"></ul>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

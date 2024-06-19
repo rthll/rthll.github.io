@@ -39,7 +39,7 @@ form{
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 450px;
+    height: 400px;
     background-color: white;
     border-radius: 10px;
 }
@@ -90,4 +90,21 @@ p{
 a{
     text-decoration: none;
     color: #6ea10e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; 
+    overflow-y: auto; 
+    margin-bottom: 0px; 
+}
+
+.btnRegister {
+    margin: 0px;
+}
+
+.btnClean {
+    margin: 10px;
 }
