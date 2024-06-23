@@ -33,10 +33,11 @@ function displayAdminData(filteredData = null) {
 
     dataList.forEach((data, index) => {
         const li = document.createElement('li');
-        li.textContent = `Data: ${data.date}, Nome: ${data.name}, Email: ${data.email}`;
-        
+        li.innerHTML = `Data: ${data.date} - Nome: ${data.name} - Email: ${data.email}  `;
+
         const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Excluior';
+        deleteButton.className = 'delete-button';
+        deleteButton.textContent = 'Excluir';
         deleteButton.onclick = function() {
             deleteAdminItem(index);
         };

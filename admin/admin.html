@@ -10,21 +10,25 @@
 <body>
     <header><h1 class="title">BemNutre</h1></header>
     <main>
-        <form action="../index.html">
-            <h1>Cadastro</h1>
-            <p class="subtitle">Junte-se a nós para fazer o bem.</p>
-            <input type="text" name="name" id="name" placeholder="Nome do usuário" minlength="3" maxlength="50" required autocomplete="additional-name">
-            <input type="email" name="email" id="email" placeholder="Email do usuário" pattern="\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b" required autocomplete="email">
-            <button class="btnRegister" type="button" onclick="saveAdminData()">Cadastrar novo usuário</button>
-            <button class="btnClean" onclick="clearForm()">Limpar</button>
-            <p>Já possui uma conta? <a href="../login/login.html">Faça seu login</a></p>
-        </form>
-        <div class="bnScript">
-            <input type="text" id="searchInput" placeholder="Pesquisar...">
-            <button type="button" onclick="searchAdminData()">Pesquisar</button>
-            <button type="button" onclick="deleteAllAdmin()">Excluir Todos</button>
+        <div class="list-users">
+            <form action="../index.html">
+                <h1 class="title">Cadastro</h1>
+                <p class="subtitle">Área de cadastro para novos usuários na plataforma BemNutre.</p>
+                <input class="input-register" type="text" name="name" id="name" placeholder="Nome do usuário" minlength="3" maxlength="50" required autocomplete="additional-name">
+                <input class="input-register" type="email" name="email" id="email" placeholder="Email do usuário" required autocomplete="email">
+                <div class="buttons">
+                    <button type="button" onclick="saveAdminData()">Cadastrar novo usuário</button>
+                    <button onclick="clearForm()">Limpar Campos</button>
+                </div>
+            </form>
+            <h2>Usuários Cadastrados</h2>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Pesquisar...">
+                <button type="button" onclick="searchAdminData()">Pesquisar</button>
+                <button class="delete-button" type="button" onclick="deleteAllAdmin()">Excluir Lista</button>
+            </div> 
+            <ul id="adminDataList"></ul>
         </div>
-        <ul id="adminDataList"></ul>
     </main>
     <script src="script.js"></script>
 </body>

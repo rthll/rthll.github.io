@@ -38,10 +38,6 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 400px;
-    background-color: white;
-    border-radius: 10px;
 }
 
 form > div{
@@ -55,22 +51,29 @@ form > h1 {
     font-size: 30pt;
 }
 
-input{
-    width: 300px;
+.input-register{
+    width: 500px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.212);
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-button{
-    margin-top: 60px;
+.buttons{
+    display: flex;
+    flex-direction: row;
     width: 300px;
+}
+
+.buttons > button {
+    margin-top: 60px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.212);
     border-radius: 10px;
+    margin: 5px;
     cursor: pointer;
     font-weight: bold;
+
 }
 
 .subtitle {
@@ -101,10 +104,69 @@ ul {
     margin-bottom: 0px; 
 }
 
-.btnRegister {
-    margin: 0px;
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.btnClean {
-    margin: 10px;
+.search > input {
+    width: 400px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+
+}
+
+.search > button {
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    background-color: #4e740d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #cacaca;
+}
+
+.list-users{
+    background-color: white;
+    width: 700px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+} 
+
+h2 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 20pt;
+    color: #4e740d !important;
+}
+
+#adminDataList {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+    max-height: 300px;
+    overflow-y: auto; 
+}
+
+#adminDataList li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
